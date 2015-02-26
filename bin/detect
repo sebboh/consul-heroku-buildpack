@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
+# bin/detect <build-dir>
 
-exit 0
+echo "Consul" && exit 0
