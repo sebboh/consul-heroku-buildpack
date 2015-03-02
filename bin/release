@@ -3,6 +3,6 @@
 cat << EOF
 ---
 default_process_types:
-  consul: consul agent -server -bootstrap-expect 1 -data-dir /tmp/consul
+  consul: bin/consul agent -server -bootstrap-expect 1 -data-dir /tmp/consul
 EOF
 

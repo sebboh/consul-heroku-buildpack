@@ -8,7 +8,7 @@ consul_url="https://dl.bintray.com/mitchellh/consul"
 consul_package_version="0.5.0_linux_amd64.zip"
 consul_download_url="$consul_url/$consul_package_version"
 
-echo "Downloading consul binary package from $consul_download_url" | indent
+echo "-----> Downloading consul binary package from $consul_download_url"
 
 curl -L --silent $consul_download_url > $1/bin/$consul_package_version
 cd $1/bin && unzip $consul_package_version && rm $consul_package_version
